@@ -14,6 +14,6 @@ public class Date2LongSerializer extends StdSerializer<Date> {
     }
     @Override
     public void serialize(Date date, JsonGenerator jsonGenerator, SerializerProvider provider) throws IOException {
-        jsonGenerator.writeNumber(date.getTime() / 1000); //毫秒
+        jsonGenerator.writeNumber(date.getTime()); //毫秒
     }
 }
